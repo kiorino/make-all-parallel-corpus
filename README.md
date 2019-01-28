@@ -15,6 +15,15 @@ ${WORKDIR}/origin/SNT/SNT00230.xml
 ${WORKDIR}/origin/SNT/SNT00153.xml
 ```
 ## 実行方法
-./make_all_parallel_corpus ${WORKDIR}/origin > corpus.ja-en
-cut -f 1 corpus.ja-en > corpus.ja
-cut -f 2 corpus.ja-en > corpus.en
+### タブ区切りでja-enのパラレルコーパス作成
+```
+$ ./make_all_parallel_corpus ${WORKDIR}/origin > corpus.ja-en 
+```
+### 日本語コーパス作成
+```
+$ cut -f 1 corpus.ja-en > corpus.ja
+```
+### 英語コーパス作成
+```
+$ cut -f 2 corpus.ja-en > corpus.en
+```
